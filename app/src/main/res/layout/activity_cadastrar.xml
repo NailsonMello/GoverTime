@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/fundo"
+    tools:context=".Cadastrar">
+    <TableLayout
+        android:id="@+id/activity_table_form_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="2"
+        android:stretchColumns="2">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgUser"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icones"/>
+
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+
+            <EditText
+                android:id="@+id/edtNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/tabIndicadorColor"
+                android:textColorHint="@color/tabIndicadorColor"
+                android:textColor="@color/tabIndicadorColor"
+                android:hint="Informe seu Nome"
+                android:maxLines="1"
+                android:inputType="textAutoComplete">
+
+                <requestFocus />
+            </EditText>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/tabIndicadorColor"
+                android:textColorHint="@color/tabIndicadorColor"
+                android:textColor="@color/tabIndicadorColor"
+                android:inputType="textEmailAddress"
+                android:hint="Informe seu E-mail" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+
+            <EditText android:id="@+id/edtSenha"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/tabIndicadorColor"
+                android:textColorHint="@color/tabIndicadorColor"
+                android:textColor="@color/tabIndicadorColor"
+                android:inputType="textPassword"
+                android:hint="Informe sua Senha" />
+
+        </TableRow>
+
+        <TableRow
+
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp">
+
+
+            <Button android:id="@+id/btnSalvar"
+                android:layout_span="2"
+                style="@style/botao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Criar uma conta GoverTime"
+                android:textColor="@color/tabIndicadorColor"
+                android:background="@drawable/botao_votar"
+                android:layout_weight="1"
+                android:onClick="cad"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+        </TableRow>
+    </TableLayout>
+</ScrollView>

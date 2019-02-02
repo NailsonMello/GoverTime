@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listaComentario"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_above="@+id/lei"
+        android:layout_marginTop="3dp">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/lei"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="8dp"
+        android:padding="2dp"
+        android:background="@drawable/botao_votar">
+
+        <EditText
+            android:id="@+id/edtComent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tabIndicadorColor"
+            android:textColorHint="@color/tabIndicadorColor"
+            android:paddingTop="5dp"
+            android:paddingLeft="2dp"
+            android:layout_gravity="bottom"
+            android:inputType="textMultiLine"
+            android:hint="Deixe um comentario..."
+            android:layout_weight="4"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_sendComent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_menu_send"
+            android:padding="20dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="20"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

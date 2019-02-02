@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "755398711651",
+    "firebase_url": "https://govertime-a53e7.firebaseio.com",
+    "project_id": "govertime-a53e7",
+    "storage_bucket": "govertime-a53e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755398711651:android:388557cbc292428f",
+        "android_client_info": {
+          "package_name": "lass.govertime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "755398711651-sbil13fe1gg4rep5p5dddojkikk7b85p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lass.govertime",
+            "certificate_hash": "f7a75319446891ca83d963c6c792852e4069bac5"
+          }
+        },
+        {
+          "client_id": "755398711651-btjtifanpp94u0s5ave2l7p8a1cidar3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtcaAjt5BWKWtOTPae5SJKJ0GfWu4O1VE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "755398711651-btjtifanpp94u0s5ave2l7p8a1cidar3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

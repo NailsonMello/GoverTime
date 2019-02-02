@@ -1,0 +1,104 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/fundo"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/icones"/>
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/tabIndicadorColor"
+            android:textColorHint="@color/tabIndicadorColor"
+            android:textColor="@color/tabIndicadorColor"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/edtSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/tabIndicadorColor"
+            android:textColorHint="@color/tabIndicadorColor"
+            android:textColor="@color/tabIndicadorColor"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/txtEsqueceu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="Esqueceu a senha?"
+            android:layout_gravity="end"
+            android:textColor="@color/tabIndicadorColor"
+            android:onClick="clickEsqueceu"/>
+
+            <Button
+                android:id="@+id/btnEntrar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/botao"
+                android:textAllCaps="false"
+                android:textSize="24dp"
+                android:text="Entrar"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/tabIndicadorColor"
+                android:background="@drawable/botao_votar"
+                android:onClick="clickLogin"/>
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/btnGoogle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center_horizontal"
+                >
+
+            </com.google.android.gms.common.SignInButton>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OU"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textSize="10dp"
+                android:textColor="@color/tabIndicadorColor"/>
+
+            <Button
+                android:id="@+id/btnCad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/botao"
+                android:textAllCaps="false"
+                android:textSize="24dp"
+                android:layout_marginTop="10dp"
+                android:text="Cadastrar"
+                android:textColor="@color/tabIndicadorColor"
+                android:background="@drawable/botao_votar"
+                android:onClick="clickCad"/>
+
+    </LinearLayout>
+</ScrollView>

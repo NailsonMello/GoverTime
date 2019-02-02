@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@mipmap/ic_login"
+            android:title="Login/Cadastrar" />
+        <item
+            android:id="@+id/nav_feed"
+            android:icon="@mipmap/ic_feed"
+            android:title="Noticias" />
+        <item
+            android:id="@+id/nav_ranking"
+            android:icon="@mipmap/ic_ranking"
+            android:title="Ranking" />
+        <item
+            android:id="@+id/nav_all"
+            android:title="Todos Politicos"
+            android:icon="@mipmap/ic_all"/>
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@mipmap/ic_perfil_usuario"
+            android:title="Perfil"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_favoritos"
+            android:icon="@mipmap/ic_favoritos"
+            android:title="Favoritos"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_termos"
+            android:icon="@mipmap/ic_termos"
+            android:title="Termos de Uso" />
+        <item
+            android:id="@+id/nav_carregarNoticias"
+            android:icon="@mipmap/ic_carregar_noticias"
+            android:visible="false"
+            android:title="Carregar Noticias" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@mipmap/ic_logout"
+            android:title="Logout"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/nav_fechar"
+            android:icon="@mipmap/ic_fechar"
+            android:title="Fechar" />
+    </group>
+
+</menu>

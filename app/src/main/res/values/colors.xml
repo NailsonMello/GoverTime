@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#414040</color>
+    <color name="colorPrimaryDark">#565655</color>
+    <color name="colorAccent">#2d2c2b</color>
+    <color name="corpo">#333333</color>
+    <color name="cadastrar">#e0075b9c</color>
+    <color name="cancelar">#e0ce2528</color>
+    <color name="colorbotao">#e0075b9c</color>
+    <color name="tabText">#9cafad</color>
+    <color name="tabIndicadorColor">#fff</color>
+</resources>

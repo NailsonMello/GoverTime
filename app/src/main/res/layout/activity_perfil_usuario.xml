@@ -1,0 +1,111 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/fundo">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:id="@+id/collapsing_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:expandedTitleMarginEnd="104dp"
+        app:expandedTitleMarginStart="88dp"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+        <ImageView
+            android:id="@+id/imgPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            />
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+           </android.support.design.widget.AppBarLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <TextView
+        android:id="@+id/txt"
+        android:layout_marginLeft="2dp"
+        android:text="Nome:"
+        android:textColor="#c3c3c3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:padding="4dp"
+        android:id="@+id/NomePerfilUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_below="@+id/txt"
+        android:textSize="24dp"
+        android:text="Nome"
+        android:textColor="@color/tabIndicadorColor"/>
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_below="@+id/NomePerfilUsuario"
+        android:layout_marginLeft="2dp"
+        android:text="E-mail:"
+        android:textColor="#c3c3c3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:padding="4dp"
+        android:id="@+id/EmailPerfilUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_below="@+id/txt1"
+        android:textSize="24dp"
+        android:text="e-mail"
+        android:textColor="@color/tabIndicadorColor" />
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_marginLeft="2dp"
+        android:layout_below="@+id/EmailPerfilUsuario"
+        android:text="Voto:"
+        android:textColor="#c3c3c3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/txt2"
+        android:id="@+id/containerUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
+
+    <FrameLayout
+        android:layout_gravity="right|bottom"
+        android:background="@drawable/btn_editar"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp">
+        <Button
+            android:id="@+id/btnEditarPerfil"
+            android:background="@drawable/ic_edit"
+            android:textColor="@color/tabIndicadorColor"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

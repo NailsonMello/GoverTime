@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    android:orientation="vertical"
+    android:id="@+id/cont"
+    tools:context=".PerfilPolitico">
+    <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:expandedTitleMarginEnd="64dp"
+                app:expandedTitleMarginStart="48dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <com.github.florent37.diagonallayout.DiagonalLayout
+                    android:id="@+id/diagonal"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:elevation="10dp"
+                    app:diagonal_angle="5"
+                    app:layout_collapseMode="parallax"
+                    app:diagonal_gravity="left|bottom">
+
+                    <ImageView
+                        android:id="@+id/imgCandidato"
+                        android:background="@color/tabIndicadorColor"
+                        android:src="@drawable/default_avatar"
+                        android:adjustViewBounds="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/nomeCandidato"
+                        android:text="nome"
+                        android:textColor="#fff"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:background="#8a646363"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="10dp"/>
+                    <TextView
+                        android:id="@+id/ContSeguir"
+                        android:padding="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="35dp"
+                        android:textColor="@color/tabIndicadorColor"
+                        android:layout_gravity="center_vertical|right"
+                        android:background="#91646363"
+                        android:text="0"/>
+
+                </com.github.florent37.diagonallayout.DiagonalLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <android.support.design.widget.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabGravity="fill"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/tabIndicadorColor"
+                android:id="@+id/tabLayout_id"
+                app:tabTextColor="@color/tabText"
+                app:tabIndicatorColor="@color/tabIndicadorColor" />
+
+        </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewPager_id"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</android.support.design.widget.CoordinatorLayout>
